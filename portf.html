@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/portfolio.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+    
+    <style>
+        #home{
+            margin-left: 800px;
+        }
+        #profile{
+            margin-top: 100px;
+        }
+        img{
+            height: 590px;
+            width: auto;
+            padding-bottom: 100px;
+        }
+        #pro1{
+            animation: load1 3s normal forwards;
+            background-color: black;
+        }
+        @keyframes load1{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 80%;
+            }
+        }
+        #pro2{
+            animation: load2 3s normal forwards;
+            background-color: black;
+        }
+        @keyframes load2{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 60%;
+            }
+        }
+        #pro3{
+            animation: load3 3s normal forwards;
+            background-color: black;
+        }
+        @keyframes load3{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 60%;
+            }
+        }
+        #pro4{
+            animation: load4 3s normal forwards;
+            background-color: black;
+        }
+        @keyframes load4{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 55%;
+            }
+        }
+        #pro5{
+            animation: load5 3s normal forwards;
+            background-color: black;
+        }
+        @keyframes load5{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 50%;
+            }
+        }
+        h3{
+            padding-top: 50px;
+        }
+
+
+        .zoom-card {
+            transition: transform 0.2s ease; /* Smooth transition for the zoom effect */
+        }
+
+        .zoom-card:hover {
+            transform: scale(1.05); /* Slightly zoom in the card on hover */
+        }
+
+
+
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+        }
+
+        .hover-card:hover {
+            transform: scale(1.05); /* Slightly zoom in the card */
+            box-shadow: rgba(4, 4, 4, 0.4) 10px 10px, rgba(10, 9, 9, 0.3) 15px 15px, rgba(10, 9, 9, 0.2) 20px 20px, rgba(255, 242, 250, 0.1) 25px 25px, rgba(3, 3, 3, 0.05) 30px 30px; /* Intensified shadow on hover */
+        }
+
+
+
+
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- nav bar
+     fixed-top: to fix navbar in top -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PORTFOLIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="home" class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pro">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#con">Contact Details</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- profile section
+       image,details -->
+
+       <section id="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-mg-12 col-sm-12 text-center">
+                    <h3 data-aos="fade-right" data-aos-duration="3000" >Hello I'm</h3>
+                    <h2 data-aos="fade-right" data-aos-duration="3000">ASWIN K</h2>
+                    <h4 data-aos="fade-right" data-aos-duration="3000">Python Django Full Stack Intern</h4>
+
+                    <button data-aos="fade-right" data-aos-duration="3000" type="button" class="btn btn-outline-danger">My Work</button>
+                    <button data-aos="fade-right" data-aos-duration="3000" type="button" class="btn btn-outline-danger">Hire Me</button>
+                </div>
+                <div class="col-lg-6 col-mg-12 col-sm-12">
+                    <centre><img data-aos="fade-down" data-aos-duration="3000" src="./assets/image/ak_photo2.jpg"></centre>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- about section -->
+        <section id="about">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                        <centre><img data-aos="fade-right" data-aos-duration="3000" src="./assets/image/ak_photo3.jpg"></centre>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                        <h2 data-aos="fade-down" data-aos-duration="3000">About Me</h2>
+                        <p data-aos="fade-right" data-aos-duration="3000" align="justify">Enthusiastic and resourceful Software Engineer Intern with a deep passion for Coding and Software Development.
+                            Skilled in Python, HTML ,CSS, Bootstrap, Django Web Framework, Object-Oriented Programming (OOPs), SQL, and
+                            Database Management. Well-versed in emerging technologies, best practices, and user experience standards to
+                            deliver high-quality software. Committed to applying specialized software engineering skills to contribute
+                            effectively to a forward-thinking organization, aiming to boost productivity and enhance customer satisfaction
+                            through innovative and effective software engineering
+                            </p>
+                            <label><strong>PYTHON</strong></label>
+                            <div class="progress">
+                                <div id="pro1" class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                              </div>
+                              <label><strong>HTML</strong></label>
+                              <div class="progress">
+                                <div id="pro2" class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">75%</div>
+                              </div>
+                              <label><strong>CSS</strong></label>
+                              <div class="progress">
+                                <div id="pro3" class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">70%</div>
+                              </div>
+                              <label><strong>BOOTSRTAP</strong></label>
+                              <div class="progress">
+                                <div id="pro4" class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">60%</div>
+                              </div>
+                              <label><strong>DJANGO</strong></label>
+                              <div class="progress">
+                                <div id="pro5" class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">65%</div>
+                              </div>
+                    </div>
+                    <div id="a1">
+                        <center><a href="assets\image\ASWIN-K-cv.pdf" download=""><button class="btn btn-danger">Download CV</button></a>
+                        <a href="#" class="btn btn-danger">Contact US</a></center>
+                    </div>
+                </div>
+               </div>
+        </section>
+              
+        <!-- service -->
+
+        <div id="service" class="container-fluid mt-5" style="height: auto;">
+            <h3 style="font-family: 'Times New Roman', Times, serif;" class="text-center m-5">My Services</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="card zoom-card" style="background-color: rgb(240, 240, 248);border: solid black;">
+                        <div class="card-body text-center">
+                          <i class="fa-solid fa-laptop fa-2x"></i>
+                          <h5 class="card-title">Web Development</h5>
+                          <p class="card-text" style="text-align: justify;">Building full-stack web applications using the Django framework.
+                            Developing custom features and functionalities according to client requirements.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="card zoom-card" style="background-color: rgb(240, 240, 248); border: solid black;">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-code fa-2x"></i>
+                            <h5 class="card-title">Front-end Integration</h5>
+                            <p class="card-text" style="text-align: justify;">Integrating front-end technologies (HTML, CSS, JavaScript, Bootstrap) with Django templates.
+                            Working with front-end frameworks like Angular Framework</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="card zoom-card" style="background-color: rgb(240, 240, 248);border: solid black;">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-laptop-code fa-2x"></i>
+                            <h5 class="card-title">API Development</h5>
+                            <p class="card-text" style="text-align: justify;">Creating RESTful APIs for web application
+                            using Django REST framework involves building endpoints for data interaction, 
+                            Integrating third-party APIs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- project -->
+        
+        <div id="pro" class="container-fluid mt-5 bg-light">
+            <h3 class="text-center m-5" style="font-family: 'Times New Roman', Times, serif;">Projects</h3>
+            <div class="row">
+                <div class="col-sm-12 col-md-5 col-lg-4 mb-4">
+                    <div class="card mx-auto hover-card" style="width: 20rem;  box-shadow:  rgba(4, 4, 4, 0.4) 5px 5px, rgba(10, 9, 9, 0.3) 10px 10px, rgba(10, 9, 9, 0.2) 15px 15px, rgba(255, 242, 250, 0.1) 20px 20px, rgba(3, 3, 3, 0.05) 25px 25px;">
+                        <img src="assets\image\netportfolio.png" class="card-img-top" alt="Netflix Clone" style="height: 300px; object-fit: cover;">
+                        <div class="card-body" style="padding-top: 0px;">
+                          <h5 class="card-title">Netflix Clone</h5>
+                          <p class="card-text" style="text-align: justify;">This project involves creating a clone of the Netflix landing page from scratch using HTML and CSS. The aim is to replicate the design and layout of Netflix's homepage, focusing on the visual elements and user interface.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card mx-auto hover-card" style="width: 20rem; box-shadow: rgba(4, 4, 4, 0.4) 5px 5px, rgba(10, 9, 9, 0.3) 10px 10px, rgba(10, 9, 9, 0.2) 15px 15px, rgba(255, 242, 250, 0.1) 20px 20px, rgba(3, 3, 3, 0.05) 25px 25px;">
+                        <img src="assets\image/Screenshot (26).png" class="card-img-top" alt="E-Commerce Site"  style="height: 300px; object-fit: cover;">
+                        <div class="card-body" style="padding-top: 0px;">
+                          <h5 class="card-title">E-Commerce Site</h5>
+                          <p class="card-text" style="text-align: justify;">Develop a fully functional e-commerce platform with user authentication, product catalog, shopping cart, and payment integration. Email sending.Technology: Python, Django Framework, Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card mx-auto hover-card" style="width: 20rem; box-shadow:  rgba(4, 4, 4, 0.4) 5px 5px, rgba(10, 9, 9, 0.3) 10px 10px, rgba(10, 9, 9, 0.2) 15px 15px, rgba(255, 242, 250, 0.1) 20px 20px, rgba(3, 3, 3, 0.05) 25px 25px;">
+                        <img src="assets\image/Screenshot (197).png" class="card-img-top" alt="Job Website"  style="height: 300px; object-fit: cover;">
+                        <div class="card-body" style="padding-top: 0px;">
+                          <h5 class="card-title">Expense Manager</h5>
+                          <p class="card-text" style="text-align: justify;">Expense Manager is a full-stack web application that helps to track and manage their daily expenses, and allows users to categorize their spending, set budgets.  Technology: Python, Django Framework</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- contact -->
+        
+        <div id="con" class="container ">        
+                <div class="row" style="display: flex;justify-content: center;">
+                    <div class="col-md-5 col-sm-12 mb-3" style="padding-left: 4rem; height: auto;width: 510px;">
+                        <h4 class="text-center"><b>Contact Me</b></h2>
+                        <p class="text-center"><a><i>aswinkizhakepurayil@gmail.com</i></a></p>
+                        <p class="text-center">+91 9605529789</p>
+                        <p class="text-center">Calicut,IND</p>
+        
+        
+                    </div>
+                </div> 
+        </div>
+        
+        
+        <!-- footer -->
+        <div class="bg-light mt-5">
+            <div class="row bg-black" style="border-radius: 20px; height: auto;">
+                <div class="col-lg-12 col-sm-12 col-md-4" style="height: auto; color: aliceblue;">
+                    <h4 style="color: white; padding-left: 12rem; padding-top: 20px; font-family: fantasy; font-weight: 500; font-size: 2.5rem;">
+                        Get In Touch
+                    </h4>
+                    <p style="padding-left: 12rem;">
+                        I'd like to hear from you! Whether you have a question,<br> 
+                        a project opportunity, or just want to connect, feel free to reach out.
+                    </p>
+        
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 col-md-4" style="margin-left: 12rem;">
+                            <a class="me-4" href="www.linkedin.com/in/aswin-kk">
+                                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                            </a>
+                            <a class="me-4" href="https://github.com/me-Aswin-k">
+                                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                            </a>
+                            <a class="me-4" href="https://mail.google.com/">
+                                <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<script>
+    AOS.init();
+</script>    
+        
+
+</body>
+</html>
+
+
