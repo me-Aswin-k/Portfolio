@@ -96,6 +96,42 @@
                 width: 50%;
             }
         }
+        #pro6{
+            animation: load6 3s normal forwards;
+            background-color: black;
+        }
+        @keyframes load6{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 50%;
+            }
+        }
+        #pro7{
+            animation: load7 3s normal forwards;
+            background-color: black;
+        }
+        @keyframes load7{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 50%;
+            }
+        }
+        #pro8{
+            animation: load8 3s normal forwards;
+            background-color: black;
+        }
+        @keyframes load8{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 50%;
+            }
+        }
         h3{
             padding-top: 50px;
         }
@@ -119,7 +155,6 @@
             transform: scale(1.05); /* Slightly zoom in the card */
             box-shadow: rgba(4, 4, 4, 0.4) 10px 10px, rgba(10, 9, 9, 0.3) 15px 15px, rgba(10, 9, 9, 0.2) 20px 20px, rgba(255, 242, 250, 0.1) 25px 25px, rgba(3, 3, 3, 0.05) 30px 30px; /* Intensified shadow on hover */
         }
-
 
 
 
@@ -206,11 +241,11 @@
                               </div>
                               <label><strong>HTML</strong></label>
                               <div class="progress">
-                                <div id="pro2" class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                <div id="pro2" class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                               </div>
                               <label><strong>CSS</strong></label>
                               <div class="progress">
-                                <div id="pro3" class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                <div id="pro3" class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">70%</div>
                               </div>
                               <label><strong>BOOTSTRAP</strong></label>
                               <div class="progress">
@@ -224,12 +259,18 @@
                               <div class="progress">
                                 <div id="pro6" class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                               </div>
-                              <label><strong>SCRAPY</strong></label>
+
+                              <label><strong>React</strong></label>
                               <div class="progress">
-                                <div id="pro7" class="progress-bar" role="progressbar" style="width: 49%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                <div id="pro7" class="progress-bar" role="progressbar" style="width: 49%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                              </div>
+
+                              <label><strong>Scrapy</strong></label>
+                              <div class="progress">
+                                <div id="pro8" class="progress-bar" role="progressbar" style="width: 49%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                               </div>
                     </div>
-                    <div id="a1">
+                    <div id="a1" class="mt-5">
                         <center><a href="assets\image\ASWIN-K_Resume.pdf" download=""><button class="btn btn-danger">Download CV</button></a>
                         <a href="#" class="btn btn-danger">Contact US</a></center>
                     </div>
@@ -283,32 +324,47 @@
         
         <div id="pro" class="container-fluid mt-5 bg-light">
             <h3 class="text-center m-5" style="font-family: 'Times New Roman', Times, serif;">Projects</h3>
-            <div class="row">
-                <div class="col-sm-12 col-md-5 col-lg-4 mb-4">
-                    <div class="card mx-auto hover-card" style="width: 20rem;  box-shadow:  rgba(4, 4, 4, 0.4) 5px 5px, rgba(10, 9, 9, 0.3) 10px 10px, rgba(10, 9, 9, 0.2) 15px 15px, rgba(255, 242, 250, 0.1) 20px 20px, rgba(3, 3, 3, 0.05) 25px 25px;">
-                        <img src="assets\image\netportfolio.png" class="card-img-top" alt="Netflix Clone" style="height: 300px; object-fit: cover;">
+            <div class="row row-cols-1 row-cols-md-4 g-3 justify-content-center">
+                <!-- Netflix Clone -->
+                <div class="col">
+                    <div class="card mx-auto hover-card" style="width: 16rem; box-shadow: rgba(4, 4, 4, 0.4) 3px 3px, rgba(10, 9, 9, 0.3) 6px 6px, rgba(10, 9, 9, 0.2) 9px 9px, rgba(255, 242, 250, 0.1) 12px 12px, rgba(3, 3, 3, 0.05) 15px 15px;">
+                        <img src="assets/image/netportfolio.png" class="card-img-top" alt="Netflix Clone" style="height: 250px; object-fit: cover;">
                         <div class="card-body" style="padding-top: 0px;">
-                          <h5 class="card-title">Netflix Clone</h5>
-                          <p class="card-text" style="text-align: justify;">This project involves creating a clone of the Netflix landing page from scratch using HTML and CSS. The aim is to replicate the design and layout of Netflix's homepage, focusing on the visual elements and user interface.</p>
+                            <h5 class="card-title">Netflix Clone</h5>
+                            <p class="card-text" style="text-align: justify; font-size: 0.9rem;">This project involves creating a clone of the Netflix landing page from scratch using HTML and CSS. The aim is to replicate the design and layout of Netflix's homepage, focusing on the visual elements and user interface.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card mx-auto hover-card" style="width: 20rem; box-shadow: rgba(4, 4, 4, 0.4) 5px 5px, rgba(10, 9, 9, 0.3) 10px 10px, rgba(10, 9, 9, 0.2) 15px 15px, rgba(255, 242, 250, 0.1) 20px 20px, rgba(3, 3, 3, 0.05) 25px 25px;">
-                        <img src="assets\image/Screenshot (26).png" class="card-img-top" alt="E-Commerce Site"  style="height: 300px; object-fit: cover;">
+        
+                <!-- E-Commerce Site -->
+                <div class="col">
+                    <div class="card mx-auto hover-card" style="width: 16rem; box-shadow: rgba(4, 4, 4, 0.4) 3px 3px, rgba(10, 9, 9, 0.3) 6px 6px, rgba(10, 9, 9, 0.2) 9px 9px, rgba(255, 242, 250, 0.1) 12px 12px, rgba(3, 3, 3, 0.05) 15px 15px;">
+                        <img src="assets/image/Screenshot (26).png" class="card-img-top" alt="E-Commerce Site" style="height: 250px; object-fit: cover;">
                         <div class="card-body" style="padding-top: 0px;">
-                          <h5 class="card-title">E-Commerce Site</h5>
-                          <p class="card-text" style="text-align: justify;">Develop a fully functional e-commerce platform with user authentication, product catalog, shopping cart, and payment integration. Email sending.Technology: Python, Django Framework, Bootstrap</p>
+                            <h5 class="card-title">E-Commerce Site</h5>
+                            <p class="card-text" style="text-align: justify; font-size: 0.9rem;">Develop a fully functional e-commerce platform with user authentication, product catalog, shopping cart, and payment integration. Email sending. Technology: Python, Django Framework, Bootstrap</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card mx-auto hover-card" style="width: 20rem; box-shadow:  rgba(4, 4, 4, 0.4) 5px 5px, rgba(10, 9, 9, 0.3) 10px 10px, rgba(10, 9, 9, 0.2) 15px 15px, rgba(255, 242, 250, 0.1) 20px 20px, rgba(3, 3, 3, 0.05) 25px 25px;">
-                        <img src="assets\image/Screenshot (197).png" class="card-img-top" alt="Job Website"  style="height: 300px; object-fit: cover;">
+        
+                <!-- Expense Manager -->
+                <div class="col">
+                    <div class="card mx-auto hover-card" style="width: 16rem; box-shadow: rgba(4, 4, 4, 0.4) 3px 3px, rgba(10, 9, 9, 0.3) 6px 6px, rgba(10, 9, 9, 0.2) 9px 9px, rgba(255, 242, 250, 0.1) 12px 12px, rgba(3, 3, 3, 0.05) 15px 15px;">
+                        <img src="assets/image/Screenshot (197).png" class="card-img-top" alt="Expense Manager" style="height: 250px; object-fit: cover;">
                         <div class="card-body" style="padding-top: 0px;">
-                          <h5 class="card-title">Expense Manager</h5>
-                          <p class="card-text" style="text-align: justify;">Expense Manager is a full-stack web application that helps to track and manage their daily expenses, and allows users to categorize their spending, set budgets.  Technology: Python, Django Framework</p>
-                        
+                            <h5 class="card-title">Expense Manager</h5>
+                            <p class="card-text" style="text-align: justify; font-size: 0.9rem;">Expense Manager is a full-stack web application that helps track and manage daily expenses, and allows users to categorize their spending, set budgets. Technology: Python, Django Framework</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Web Scraping -->
+                <div class="col">
+                    <div class="card mx-auto hover-card" style="width: 16rem; box-shadow: rgba(4, 4, 4, 0.4) 3px 3px, rgba(10, 9, 9, 0.3) 6px 6px, rgba(10, 9, 9, 0.2) 9px 9px, rgba(255, 242, 250, 0.1) 12px 12px, rgba(3, 3, 3, 0.05) 15px 15px;">
+                        <img src="assets/image/webscraping.jpg" class="card-img-top" alt="Web Scraping" style="height: 250px; object-fit: cover;">
+                        <div class="card-body" style="padding-top: 0px;">
+                            <h5 class="card-title">Web Scraping</h5>
+                            <p class="card-text" style="text-align: justify; font-size: 0.9rem;">Designed and implemented a web scraping application to extract and store large datasets from dynamic web pages using Python and libraries like BeautifulSoup and Scrapy.</p>
                         </div>
                     </div>
                 </div>
@@ -316,6 +372,9 @@
         </div>
         <br>
         <br>
+        
+        
+        
         <!-- contact -->
         
         <div id="con" class="container ">        
